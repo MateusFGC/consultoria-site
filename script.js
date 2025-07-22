@@ -1,4 +1,4 @@
-/*=============== SMOOTH SCROLL FOR NAV LINKS ===============*/
+/*=============== SCROLL suave ===============*/
 document.addEventListener('DOMContentLoaded', () => {
     // Seleciona todos os links de navegação que apontam para âncoras na página
     const navLinks = document.querySelectorAll('.nav__link[href^="#"]');
@@ -21,4 +21,35 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+});
+/*=============== CARROSSEL PROCESSO ===============*/
+const processSwiper = new Swiper('.process__container.swiper', {
+    // Configurações padrão (Mobile)
+    slidesPerView: 1.2,
+    spaceBetween: 20,
+    centeredSlides: true,
+    loop: true,
+
+    // Paginação
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    
+    // Configuração responsiva (Breakpoints)
+    breakpoints: {
+      // Quando a tela for 768px ou maior
+      768: {
+        slidesPerView: 3, // Mostra 3 slides
+        centeredSlides: false,
+        loop: false,
+      },
+      // Quando a tela for 1024px ou maior
+      1024: {
+        slidesPerView: 4, // Mostra 4 slides (layout de grade)
+        spaceBetween: 30,
+        centeredSlides: false,
+        loop: false,
+      }
+    }
 });
