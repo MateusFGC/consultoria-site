@@ -141,7 +141,7 @@ img {
 
 /*=============== HERO ===============*/
 .hero {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./assets/images/hero-background.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./assets/images/hero-background.webp');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
