@@ -21,35 +21,52 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-});
-/*=============== CARROSSEL PROCESSO ===============*/
-const processSwiper = new Swiper('.process__container.swiper', {
-    // Configurações padrão (Mobile)
-    slidesPerView: 1.2,
-    spaceBetween: 20,
-    centeredSlides: true,
-    loop: true,
+     /*=============== LÓGICA DO CARROSSEL DE PROCESSO ===============*/
+    let processSwiper;
+    const breakpoint = 768; // Ponto de transição para desktop
 
-    // Paginação
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    
-    // Configuração responsiva (Breakpoints)
-    breakpoints: {
-      // Quando a tela for 768px ou maior
-      768: {
-        slidesPerView: 3, // Mostra 3 slides
-        centeredSlides: false,
-        loop: false,
-      },
-      // Quando a tela for 1024px ou maior
-      1024: {
-        slidesPerView: 4, // Mostra 4 slides (layout de grade)
-        spaceBetween: 30,
-        centeredSlides: false,
-        loop: false,
-      }
-    }
+    const initSwiper = () => {
+        processSwiper = new Swiper('.process__container.swiper', {
+            // Configurações Mobile
+            slidesPerView: 1.2, // Mostra 1 slide e um pedaço do próximo
+            spaceBetween: 20,
+            loop: true,
+            centeredSlides: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    };
+
+    const destroySwiper = () => {
+        if (processSwiper) {
+            processSwiper.destroy(true, true);
+            processSwiper = undefined;
+        }
+    };
+
+    const handleCarousel = () => {
+        if (window.innerWidth < breakpoint) {
+            // Se for mobile e o carrossel não existir, crie-o
+            if (!processSwiper) {
+                initSwiper();
+            }
+        } else {
+            // Se for desktop, destrua o carrossel
+            destroySwiper();
+        }
+    };
+
+    // Executa a lógica ao carregar e ao redimensionar a tela
+    handleCarousel();
+    window.addEventListener('resize', handleCarousel);
 });

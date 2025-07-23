@@ -293,19 +293,44 @@ img {
 }
 
 /*=============== CARROSSEL PROCESSO (SWIPER) ===============*/
-.process__container.swiper {
-    padding-bottom: 3rem; 
-}
 
 /* Estilo da Paginação */
-.swiper-pagination-bullet {
-    background-color: var(--text-color);
-    opacity: 0.5;
+.swiper-pagination-bullet-active {
+    background-color: var(--first-color);
 }
 
-.swiper-pagination-bullet-active {
-    background-color: var(--first-color); /* Usa a cor principal para a bolinha ativa */
-    opacity: 1;
+  .process__container.swiper {
+    padding-bottom: 3rem;
+}
+
+/* Estilo dos Botões de Navegação no Mobile */
+.process__container .swiper-button-next,
+.process__container .swiper-button-prev {
+    color: var(--first-color);
+}
+
+.process__container .swiper-button-next::after,
+.process__container .swiper-button-prev::after {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+
+/* LÓGICA RESPONSIVA */
+@media screen and (min-width: 768px) {
+    /* Em telas de desktop, a classe swiper-wrapper vira uma grade */
+    .process__container .swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Esconde os elementos de navegação do carrossel no desktop */
+    .process__container .swiper-button-next,
+    .process__container .swiper-button-prev,
+    .process__container .swiper-pagination {
+        display: none;
+    }
 }
 
 /* Garante que o card não seja esmagado */
