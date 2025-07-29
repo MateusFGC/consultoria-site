@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             spaceBetween: 20,
             loop: true,
             centeredSlides: true,
+            allowTouchMove: false,
             autoplay: {
                 delay: 4000,
                 disableOnInteraction: false,
