@@ -38,9 +38,6 @@
   padding: 0;
   margin: 0;
 }
-div > :is(.about__description, .process__description) {
- text-align: justify;
-}
 
 html {
   scroll-behavior: smooth;
