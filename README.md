@@ -8,4 +8,6 @@ As tecnologias utilizadas foram:
 - **CSS3** → estilização moderna e design **totalmente responsivo**  
 - **JavaScript** → dinamismo e interatividade da página  
 
-O desenvolvimento teve foco em **SEO (Search Engine Optimization)**, **acessibilidade** e **responsividade**, garantindo melhor ranqueamento nos mecanismos de busca, experiência inclusiva e adaptação para diferentes dispo
+O desenvolvimento teve foco em **SEO (Search Engine Optimization)**, **acessibilidade** e **responsividade**, garantindo melhor ranqueamento nos mecanismos de busca, experiência inclusiva e adaptação para diferentes dispositivos.
+
+https://mateusfgc.github.io/consultoria-site/
