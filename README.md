@@ -1,7 +1,5 @@
 # 🌱 Projeto Front-End – Consultoria Ambiental
 
-## 🔹 Versão Formal/Técnica (para recrutadores e colegas devs)
-
 ### Sobre o projeto  
 Este projeto foi desenvolvido para uma empresa de **consultoria ambiental**, tendo como principal objetivo ampliar a visibilidade de seus serviços por meio de uma presença digital mais eficiente.  
 
