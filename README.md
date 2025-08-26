@@ -1,6 +1,6 @@
 # Landing Page para Consultoria Técnica Agrícola e Ambiental
 
-![Badge de Performance](https://img.shields.io/badge/Performance-83-orange)
+![Badge de Desempenho](https://img.shields.io/badge/Performance-83-orange)
 ![Badge de Acessibilidade](https://img.shields.io/badge/Acessibilidade-87-orange)
 ![Badge de Boas Práticas](https://img.shields.io/badge/Práticas_Recomendadas-100-brightgreen)
 ![Badge de SEO](https://img.shields.io/badge/SEO-100-brightgreen)
