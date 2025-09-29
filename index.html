@@ -10,8 +10,7 @@
     <meta name="google-site-verification" content="_icgsR5IE0Wd1w-FBpwo70XtZNYZ8PBtnQz2lA--Isw" />
     
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MCYJC3Z88Q"></script>
-    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MCYJC3Z88Q"></script>    
     <!-- Google tag (gtag.js) -->
     <script>
     window.dataLayer = window.dataLayer || [];
@@ -19,11 +18,38 @@
     gtag('js', new Date());
 
     gtag('config', 'G-MCYJC3Z88Q'); // Configura o Google Analytics
-    gtag('config', 'AW-17604264397'); // Configura o Google Ads
     </script>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17604264397"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'AW-17604264397');// Configura o Google Ads
+    </script>
 
+   
+    <!-- Trecho do evento para a página de conversão do Solicitar cotação
+    Na sua página HTML, adicione o trecho e chame gtag_report_conversion quando alguém clicar no link ou botão escolhido. -->
+    <script>
+    function gtag_report_conversion(url) {
+    var callback = function () {
+        if (typeof(url) != 'undefined') {
+        window.location = url;
+        }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-17604264397/hSJwCI3FxqIbEM2Dr8pB',
+        'event_callback': callback
+    });
+    return false;
+    }
+    </script>
+    <!--  Converção ancola quando não sai da pagina:
+    gtag('event', 'conversion', {'send_to': 'AW-17604264397/hSJwCI3FxqIbEM2Dr8pB'}) -->
+   
     
     <title>Perícia Judicial e Licenciamento Ambiental em Limeira/SP </title>
 
@@ -65,7 +91,7 @@
                     <p class="hero__subtitle">Serviços de Licenciamento Ambiental para Empresas</p>
                     <p class="hero__location">📍 Limeira e Região</p>
                     <a href="https://wa.me/5519996264277?text=Olá!%20vim%20pelo%20site%20e%20gostaria%20de%20uma%20consultoria." 
-                    onclick="gtag('event', 'conversion', {'send_to': 'AW-17604264397/hSJwCI3FxqIbEM2Dr8pB'})"
+                    onclick="return gtag_report_conversion('https://wa.me/5519996264277?text=Olá!%20Encontrei%20o%20site%20e%20gostaria%20de%20uma%20consultoria%20com%20o%20Eng.%20Fernando.')"
                     class="button" target="_blank">Falar com um Especialista</a>
 
                 </div>
@@ -178,7 +204,7 @@
             <p class="footer__crea">CREA-SP: 060137738-3 / 060089150-1</p>
             <div class="footer__contact">
                 <a href="https://wa.me/5519996264277?text=Olá!%20Encontrei%20o%20site%20e%20gostaria%20de%20uma%20consultoria%20com%20o%20Eng.%20Fernando."
-                    onclick="gtag('event', 'conversion', {'send_to': 'AW-17604264397/hSJwCI3FxqIbEM2Dr8pB'})"
+                    onclick="return gtag_report_conversion('https://wa.me/5519996264277?text=Olá!%20Encontrei%20o%20site%20e%20gostaria%20de%20uma%20consultoria%20com%20o%20Eng.%20Fernando.')"
                     target="_blank">
                     Fernando: (19) 99626-4277</a>
                 <span>•</span>
@@ -186,7 +212,7 @@
             </div>
             <div class="footer__contact">
                 <a href="https://wa.me/5519996872645?text=Olá!%20Encontrei%20o%20site%20e%20gostaria%20de%20uma%20consultoria%20com%20o%20Engª%20Salete."
-                    onclick="gtag('event', 'conversion', {'send_to': 'AW-17604264397/hSJwCI3FxqIbEM2Dr8pB'})"
+                    onclick="return gtag_report_conversion('https://wa.me/5519996264277?text=Olá!%20Encontrei%20o%20site%20e%20gostaria%20de%20uma%20consultoria%20com%20o%20Eng.%20Fernando.')"
                     target="_blank">
                     Salete: (19) 99687-2645</a>
                 <span>•</span>
@@ -198,7 +224,7 @@
     </footer>
 
     <a href="https://wa.me/5519996264277?text=Olá!%20Encontrei%20o%20site%20e%20gostaria%20de%20uma%20consultoria%20com%20o%20Eng.%20Fernando."
-        onclick="gtag('event', 'conversion', {'send_to': 'AW-17604264397/hSJwCI3FxqIbEM2Dr8pB'})"
+        onclick="return gtag_report_conversion('https://wa.me/5519996264277?text=Olá!%20Encontrei%20o%20site%20e%20gostaria%20de%20uma%20consultoria%20com%20o%20Eng.%20Fernando.')"
         class="whatsapp-button" 
         target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="28" height="28">
