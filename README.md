@@ -9,7 +9,8 @@ Landing Page profissional e responsiva desenvolvida para uma consultoria técnic
 
 ### Visualização do Projeto
 
-https://mateusfgc.github.io/consultoria-site
+> <a href="https://mateusfgc.github.io/LP-especial-dispenser-kabum/" target="_blank"><strong>Clique aqui para ver a LP no ar</strong></a>
+
 ---
 
 ## 🚀 Sobre o Projeto
@@ -59,5 +60,5 @@ A nota de 83 reflete um **equilíbrio estratégico entre performance e um design
 
 **[Mateus Granzotto]**
 
-* LinkedIn: [https://linkedin.com/in/mateus-fgc](https://www.linkedin.com/in/mateus-fgc/)
-* GitHub: [https://github.com/MateusFGC](https://github.com/MateusFGC)
+* LinkedIn: <a href="https://www.linkedin.com/in/mateus-fgc/" target="_blank">https://www.linkedin.com/in/mateus-fgc/</a>
+* GitHub: <a href="https://github.com/MateusFGC" target="_blank">https://github.com/MateusFGC</a>
