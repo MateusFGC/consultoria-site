@@ -59,5 +59,5 @@ A nota de 83 reflete um **equilíbrio estratégico entre performance e um design
 
 **[Mateus Granzotto]**
 
-* LinkedIn: [https://linkedin.com/in/seu-usuario](https://www.linkedin.com/in/mateus-fgc/)
+* LinkedIn: [https://linkedin.com/in/mateus-fgc](https://www.linkedin.com/in/mateus-fgc/)
 * GitHub: [https://github.com/MateusFGC](https://github.com/MateusFGC)
